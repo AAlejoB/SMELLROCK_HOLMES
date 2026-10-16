@@ -13,3 +13,6 @@ se anota la respuesta con fecha y se lleva a la ficha o al caso.
 | 6 | Las 26 tarjetas con «Foto próximamente» y las 3 fotos que se cargan desde la web de Juleriaque: ¿hay fotos propias para reemplazarlas? | ST / Alejo | Primera impresión y riesgo de usar fotos ajenas | casos/01 |
 | 7 | ¿ST es Responsable Inscripto? Si sí, el precio sin impuestos nacionales tiene que verse (Grid lo muestra) | ST / contador | Transparencia Fiscal | casos/01 |
 | 8 | ¿Qué se puede prometer de envío en la primera pantalla? (costo y fecha a Comodoro y al resto; retiro en el local) | ST | Es la pregunta que ST no contesta y Grid sí | casos/01 |
+| 9 | ¿Por qué el catálogo arranca ordenado por «precio: mayor a menor»? ¿Fue a propósito (ancla) o quedó así? | Alejo | Decide qué va en los primeros lugares | casos/02 |
+| 10 | ¿Cuándo entra un perfume a «Nuevo» y cuándo sale? (hoy 96 de 200 tarjetas lo dicen) | Alejo | Sin cupo, la cinta no destaca nada | casos/02 |
+| 11 | ¿La vista de una columna grande fue elegida por algo (fotos lucidas) o se puede probar 2 columnas por defecto? | Alejo | Hoy la primera pantalla no muestra ningún precio | casos/02 |
