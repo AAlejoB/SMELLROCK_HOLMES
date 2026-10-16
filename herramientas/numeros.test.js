@@ -27,8 +27,8 @@ test('C · de cada tantos', () => {
   assert.equal(H.deCadaTantos(3, 60).texto, '1 de cada 20');
   assert.equal(H.deCadaTantos(9, 90).texto, '1 de cada 10');
   assert.equal(H.deCadaTantos(7, 10).texto, '7 de cada 10');
-  assert.equal(H.deCadaTantos(0, 40).texto, 'Nadie todavía, de 40 que miraron');
-  assert.equal(H.deCadaTantos(0, 0).texto, 'Todavía nadie lo miró');
+  assert.equal(H.deCadaTantos(0, 40).texto, 'Nadie todavía (de 40)');
+  assert.equal(H.deCadaTantos(0, 0).texto, 'Todavía no hay datos');
 });
 
 test('B · chance de ganar coincide con la simulación del foro (≈ 0,846)', () => {

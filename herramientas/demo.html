@@ -82,7 +82,7 @@
   // Se dibujan exactamente «de cada» personas con «uno» pintado: lo que dice el texto, lo muestra el dibujo.
   function personas(k, n) {
     var c = H.deCadaTantos(k, n);
-    var tope = Math.min(c.deCada || 0, 40), on = c.uno || 0, html = '';
+    var tope = Math.min(c.deCada || 0, 100), on = c.uno || 0, html = '';
     for (var i = 0; i < tope; i++) html += '<span class="p' + (i < on ? ' on' : '') + '"></span>';
     return html;
   }

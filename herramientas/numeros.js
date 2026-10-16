@@ -47,8 +47,8 @@
   // ── C. De cada tantos (frecuencias naturales, Gigerenzer) ────────────────
   function deCadaTantos(exitos, total) {
     validar(exitos, total);
-    if (total === 0) return { uno: null, deCada: null, texto: 'Todavía nadie lo miró' };
-    if (exitos === 0) return { uno: 0, deCada: total, texto: 'Nadie todavía, de ' + total + ' que miraron' };
+    if (total === 0) return { uno: null, deCada: null, texto: 'Todavía no hay datos' };
+    if (exitos === 0) return { uno: 0, deCada: total, texto: 'Nadie todavía (de ' + total + ')' };
     var p = exitos / total;
     if (p <= 0.5) {
       var k = Math.round(1 / p);
