@@ -46,7 +46,8 @@ tecnicas/          ← una ficha por técnica (plantilla: tecnicas/_plantilla.md
 casos/             ← una pregunta real, de lo puntual a lo general
 reglas/            ← lo que ya sirve para cualquier tienda
 preguntas/         ← lo que no sabemos y a quién se le pregunta
-fuentes/           ← qué libros tiene Alejo y qué material público usamos
+foro/              ← los autores discuten un método; Alejo elige
+fuentes/           ← biblioteca base (13 libros) y los libros de Alejo
 .claude/skills/    ← los tres roles
 ```
 
