@@ -111,8 +111,10 @@ Gráfico: 20 muñequitos con 1 pintado, y 10 con 1 pintado.
   falso positivo).
 
 ## Lo que se decide acá
-- [ ] Alejo elige A, B, C o la combinación.
-- [ ] Lo elegido se vuelve una regla en `reglas/` y una sección de
-  `leer-numero`.
+- [x] **Alejo eligió la combinación** (16-10-2026): «combinando los 3 es
+  hermoso, sobre todo B y C».
+- [x] Es la regla [mostrar-un-dato](../reglas/mostrar-un-dato.md), con su
+  código en [`herramientas/numeros.js`](../herramientas/numeros.js) y una
+  página de prueba.
 - [ ] Se lleva al Laboratorio de ST o directo a la plataforma (decide Alejo con
   Lautaro).

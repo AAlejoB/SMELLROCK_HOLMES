@@ -47,6 +47,7 @@ casos/             ← una pregunta real, de lo puntual a lo general
 reglas/            ← lo que ya sirve para cualquier tienda
 preguntas/         ← lo que no sabemos y a quién se le pregunta
 foro/              ← los autores discuten un método; Alejo elige
+herramientas/      ← código chico sin dependencias que sale de las reglas
 fuentes/           ← biblioteca base (13 libros) y los libros de Alejo
 .claude/skills/    ← los tres roles
 ```

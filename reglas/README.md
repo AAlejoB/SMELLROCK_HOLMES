@@ -7,4 +7,7 @@ Lo que ya sirve para cualquier tienda. Cada regla:
 - tiene su límite ético y legal,
 - dice cómo se mide.
 
-Todavía no hay ninguna: la primera sale de `casos/01-mira-y-no-compra.md`.
+| Regla | Sale de | Estado |
+|---|---|---|
+| [mostrar-un-dato](mostrar-un-dato.md) | foro 01 | Elegida por Alejo (16-10-2026), sin probar en tienda |
+| Contá cuántos llegan · Las 4 preguntas de la primera pantalla | caso 01 | Borrador, dentro del caso |

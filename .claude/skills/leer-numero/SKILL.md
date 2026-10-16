@@ -56,6 +56,14 @@ Fechas (aguinaldo, Día de la Madre, Navidad), un posteo que se viralizó, un
 cambio de precio, un perfume que se quedó sin stock, un bot. Un número que
 salta sin que hayas cambiado nada **también es ruido**.
 
+## Cómo mostrarlo en una pantalla
+
+Regla `reglas/mostrar-un-dato.md` (elegida por Alejo): tres capas.
+Arriba «1 de cada 20» (y «todavía son pocas» si corresponde), para decidir «85 %
+de chances de que B sea mejor; decidimos con 95 %», y en «ver detalle» el rango.
+Las cuentas y las frases ya están en `herramientas/numeros.js`: usalo, no las
+rehagas a mano.
+
 ## Cómo contestarle a Alejo
 
 Una línea con el veredicto («dice algo», «es ruido», «no se puede saber

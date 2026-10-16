@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holmes · cómo mostrar un dato</title>
+<style>
+  :root { --bg:#fbfaf7; --card:#fff; --ink:#1b1b1a; --sub:#5d5c58; --muted:#8a8984; --line:#e3e1da; --accent:#2a78d6; --soft:#eef3fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --card:#1f1f1e; --ink:#f0efec; --sub:#c3c2b7; --muted:#8a8984; --line:#33332f; --accent:#3987e5; --soft:#1d2a3b; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:22px; font-weight:600; margin:0 0 4px; }
+  p.lead { color:var(--sub); margin:0 0 20px; }
+  .inputs { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-bottom:20px; }
+  fieldset { border:1px solid var(--line); border-radius:12px; background:var(--card); padding:12px 16px; margin:0; }
+  legend { font-weight:600; padding:0 4px; }
+  label { display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:14px; color:var(--sub); margin:6px 0; }
+  input { width:90px; font:inherit; padding:6px 8px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink); text-align:right; }
+  .err { color:#d03b3b; font-size:13px; min-height:1em; margin:4px 0 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-bottom:12px; }
+  .tag { font-size:12px; color:var(--muted); text-transform:none; margin:0 0 6px; }
+  .big { font-size:24px; font-weight:600; margin:2px 0; }
+  .aviso { color:#b26b00; font-size:14px; margin:8px 0 0; }
+  .people { display:flex; flex-wrap:wrap; gap:3px; margin:4px 0 10px; }
+  .p { width:12px; height:16px; border-radius:6px 6px 3px 3px; background:var(--line); }
+  .p.on { background:var(--accent); }
+  .meter { position:relative; height:12px; background:var(--soft); border-radius:6px; margin:10px 0 4px; }
+  .meter > div { height:12px; background:var(--accent); border-radius:6px; }
+  .meter .mark { position:absolute; top:-5px; width:2px; height:22px; background:var(--ink); left:95%; }
+  .chance { font-size:40px; font-weight:600; line-height:1; }
+  details summary { cursor:pointer; color:var(--sub); font-size:14px; }
+  svg text { fill:var(--muted); font-size:11px; }
+  ul { margin:8px 0 0; padding-left:18px; font-size:14px; color:var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Cómo mostrar un dato</h1>
+  <p class="lead">Cambiá los números y mirá cómo se cuenta. Arriba «de cada tantos» (C), abajo la chance de ganar (B), y en «ver detalle» el rango (A).</p>
+
+  <div class="inputs">
+    <fieldset>
+      <legend>Perfume A</legend>
+      <label>Miraron <input id="na" type="number" min="0" step="1" value="60"></label>
+      <label>Escribieron <input id="ka" type="number" min="0" step="1" value="3"></label>
+      <p class="err" id="ea"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Perfume B</legend>
+      <label>Miraron <input id="nb" type="number" min="0" step="1" value="90"></label>
+      <label>Escribieron <input id="kb" type="number" min="0" step="1" value="9"></label>
+      <p class="err" id="eb"></p>
+    </fieldset>
+  </div>
+
+  <section class="card">
+    <p class="tag">C · de cada tantos</p>
+    <div id="c"></div>
+    <p class="aviso" id="aviso"></p>
+  </section>
+
+  <section class="card">
+    <p class="tag">B · para decidir</p>
+    <div class="chance" id="bnum"></div>
+    <div class="meter"><div id="bbar"></div><span class="mark" title="95 %: alcanza para decidir"></span></div>
+    <p id="btxt" style="margin:6px 0 0"></p>
+  </section>
+
+  <section class="card">
+    <details>
+      <summary>Ver detalle (A · el rango)</summary>
+      <svg id="a" viewBox="0 0 320 110" width="100%" role="img" aria-label="Rango probable de cada perfume"></svg>
+      <ul id="alist"></ul>
+    </details>
+  </section>
+</main>
+<script src="numeros.js"></script>
+<script>
+  var H = window.HolmesNumeros;
+  function leer(id) { var v = document.getElementById(id).value; return v === '' ? NaN : Number(v); }
+  // Se dibujan exactamente «de cada» personas con «uno» pintado: lo que dice el texto, lo muestra el dibujo.
+  function personas(k, n) {
+    var c = H.deCadaTantos(k, n);
+    var tope = Math.min(c.deCada || 0, 40), on = c.uno || 0, html = '';
+    for (var i = 0; i < tope; i++) html += '<span class="p' + (i < on ? ' on' : '') + '"></span>';
+    return html;
+  }
+  function pintar() {
+    var a = { exitos: leer('ka'), total: leer('na') }, b = { exitos: leer('kb'), total: leer('nb') };
+    var ok = true;
+    [['ea', a], ['eb', b]].forEach(function (x) {
+      var e = '', d = x[1];
+      if (!Number.isInteger(d.exitos) || !Number.isInteger(d.total) || d.exitos < 0 || d.total < 0) e = 'Poné números enteros, 0 o más.';
+      else if (d.exitos > d.total) e = 'No pueden escribir más de los que miraron.';
+      document.getElementById(x[0]).textContent = e;
+      if (e) ok = false;
+    });
+    if (!ok) return;
+    var r = H.compararDos(a, b, ['Perfume A', 'Perfume B']);
+    document.getElementById('c').innerHTML =
+      '<div class="big">' + r.principal[0] + '</div><div class="people">' + personas(a.exitos, a.total) + '</div>' +
+      '<div class="big">' + r.principal[1] + '</div><div class="people">' + personas(b.exitos, b.total) + '</div>';
+    document.getElementById('aviso').textContent = r.aviso || '';
+    document.getElementById('bnum').textContent = r.chanceTexto;
+    document.getElementById('bbar').style.width = (r.chance * 100).toFixed(1) + '%';
+    document.getElementById('btxt').textContent = r.decision;
+    var ra = H.rango(a.exitos, a.total), rb = H.rango(b.exitos, b.total);
+    var max = Math.max(0.2, Math.ceil(Math.max(ra.hasta, rb.hasta) * 10) / 10);
+    var x = function (v) { return 40 + v / max * 260; };
+    var fila = function (nom, rr, y) {
+      if (rr.tasa === null) return '<text x="0" y="' + (y + 4) + '">' + nom + ' · sin datos</text>';
+      return '<text x="0" y="' + (y + 4) + '">' + nom + '</text>' +
+        '<line x1="' + x(rr.desde) + '" y1="' + y + '" x2="' + x(rr.hasta) + '" y2="' + y + '" stroke="#888780" stroke-width="2" stroke-linecap="round"/>' +
+        '<circle cx="' + x(rr.tasa) + '" cy="' + y + '" r="5" fill="#2a78d6"/>';
+    };
+    document.getElementById('a').innerHTML =
+      fila('A', ra, 25) + fila('B', rb, 60) +
+      '<line x1="40" y1="88" x2="300" y2="88" stroke="#c3c2b7"/>' +
+      '<text x="36" y="104">0 %</text><text x="280" y="104">' + Math.round(max * 100) + ' %</text>';
+    document.getElementById('alist').innerHTML = r.detalle.map(function (t) { return '<li>' + t + '</li>'; }).join('');
+  }
+  ['na', 'ka', 'nb', 'kb'].forEach(function (id) { document.getElementById(id).addEventListener('input', pintar); });
+  pintar();
+</script>
+</body>
+</html>
