@@ -132,11 +132,15 @@ fuentes/           ← qué libros tiene Alejo y qué material público usamos
   Los eventos de la web salen de `trackEvent` en `js/app.js`.
 - **No tocar** esos repos: ni commits, ni ramas, ni archivos.
 - **Privado**: datos de clientas, montos reales de ventas, claves y emails no
-  salen de este repo ni van a ningún artifact sin que Alejo lo diga.
+  entran a este repo (es público) ni van a ningún artifact sin que Alejo lo diga.
 
 ## Git
 
-- Repo local en `D:\workspace\smellrock-holmes`. Commits chicos, en castellano.
-- **Sin push hasta que Alejo diga dónde va** (repo de GitHub privado o no).
+- Repo local en `D:\workspace\smellrock-holmes`, remoto
+  [AAlejoB/SMELLROCK_HOLMES](https://github.com/AAlejoB/SMELLROCK_HOLMES),
+  rama `main`. Commits chicos, en castellano.
+- **El repo es PÚBLICO.** Nada privado entra: montos de ventas, datos de
+  clientas, claves, refs de Supabase, fechas de mudanza, negocio de la
+  plataforma (comisiones, ofertas). Ante la duda, a `preguntas/` sin el dato.
 - Este repo no tiene CI. Si algún día tiene, va con `paths-ignore` de
   `docs/**`, `.claude/**` y `**/*.md`, y `concurrency` con `cancel-in-progress`.

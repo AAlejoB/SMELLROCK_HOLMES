@@ -49,22 +49,22 @@ Otras diferencias:
 | Foto | 26 de 200 tarjetas con «Foto próximamente», una en el 2.º lugar del catálogo. 3 fotos se cargan desde la web de otra perfumería (Juleriaque) | Fotos propias, con gente |
 | Fecha comercial | No se ve | «Mamá Nike»: Día de la Madre (18-10) en la portada |
 | Ayuda para elegir | ✅ «¿No sabés cuál? 4 preguntas» (bien: ficha [sobrecarga-de-opciones](../tecnicas/sobrecarga-de-opciones.md)) | Marcas y «Tus modelos favoritos» |
-| Prueba social | «N mirando ahora» **inventado** (ver 1.c) | No se vio |
+| Prueba social | «N mirando ahora» simulado (ver 1.c) | No se vio |
 | Precio sin impuestos | No se ve | ✅ «$X precio sin impuestos nacionales» (Transparencia Fiscal) |
 
-### 1.c ⚠️ Lo urgente: «N mirando ahora» es inventado
+### 1.c «N mirando ahora» es simulado
 
 En `js/app.js` (`computeLiveViewers`), el número sale de mezclar el nombre del
-perfume con el reloj (cambia cada 5 minutos), de 0 a 6. No mide a nadie. El
-propio comentario del código dice que «da sensación de tracking en vivo sin
-Realtime real». Aparece en las tarjetas con más de 3 toques acumulados.
+perfume con el reloj (cambia cada 5 minutos), de 0 a 6. No mide a nadie.
+Aparece en las tarjetas con más de 3 toques acumulados.
 
-- Rompe la regla dura 2 de este proyecto («nada de “X personas viendo esto”»).
-- La investigación de la plataforma (`negocio-ar`, regla 5) lo marca como
-  prohibido por el DNU 274/2019 y sancionado afuera (Emma Sleep, CMA 2026).
-- **Es de ST, no de este repo.** Arreglo propuesto: sacarlo, o reemplazarlo
-  por un dato real (por ejemplo, «N consultas esta semana», salido de
-  `wa_click`, sólo si N es alto y verdadero). Lo decide Alejo; se hace en ST.
+**Decisión de Alejo (16-10-2026):** se queda en la web vieja de ST hasta que
+la tienda pase a la plataforma SaaS, que la reemplaza. No se toca.
+
+**Lo que se aprende para la próxima tienda:** la prueba social simulada no se
+copia. Si se quiere mostrar movimiento, sale de un dato real (por ejemplo,
+«N consultas esta semana» contado de `wa_click`, sólo cuando N es alto y
+verdadero). Ver la regla dura 2 en `CLAUDE.md`.
 
 ## 2. Lo general: por qué alguien mira y no compra
 
@@ -102,11 +102,10 @@ Pasan a `reglas/` cuando se midan en ST (ver § 4).
 
 | Paso | Rol | Qué hace falta | Quién |
 |---|---|---|---|
-| 1. Sacar o volver real «N mirando ahora» | — | Sesión en el repo de ST | Alejo decide |
-| 2. Evento «llegó» (`page_view` con origen) y `view_product` al abrir cualquier tarjeta | `leer-numero` | Sesión en ST, o directo en la plataforma (sale el 10-11) | Alejo / Lautaro |
-| 3. Prueba de 5 segundos: ST y Grid, 5 personas cada una | `qa-preguntas` | 5 personas del público de ST, 15 minutos | Alejo |
-| 4. Con 2-4 semanas de llegadas: tasa llegó → WhatsApp, con intervalo | `leer-numero` | Los datos del paso 2 | — |
-| 5. Comparar con «los más visitados» (Mercado Libre, Amazon) con las mismas 4 preguntas | `investigar` | Una pasada, sin datos privados | — |
+| 1. Evento «llegó» (`page_view` con origen) y `view_product` al abrir cualquier tarjeta | `leer-numero` | Sesión en ST, o directo en la plataforma | Alejo / Lautaro |
+| 2. Prueba de 5 segundos: ST y Grid, 5 personas cada una | `qa-preguntas` | 5 personas del público de ST, 15 minutos | Alejo |
+| 3. Con 2-4 semanas de llegadas: tasa llegó → WhatsApp, con intervalo | `leer-numero` | Los datos del paso 1 | — |
+| 4. Comparar con «los más visitados» (Mercado Libre, Amazon) con las mismas 4 preguntas | `investigar` | Una pasada, sin datos privados | — |
 
 Preguntas abiertas: ver `preguntas/abiertas.md` (1, 2, 3 y 6 a 8).
 
