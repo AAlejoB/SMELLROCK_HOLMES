@@ -16,3 +16,7 @@ se anota la respuesta con fecha y se lleva a la ficha o al caso.
 | 9 | ¿Por qué el catálogo arranca ordenado por «precio: mayor a menor»? ¿Fue a propósito (ancla) o quedó así? | Alejo | Decide qué va en los primeros lugares | casos/02 |
 | 10 | ¿Cuándo entra un perfume a «Nuevo» y cuándo sale? (hoy 96 de 200 tarjetas lo dicen) | Alejo | Sin cupo, la cinta no destaca nada | casos/02 |
 | 11 | ¿La vista de una columna grande fue elegida por algo (fotos lucidas) o se puede probar 2 columnas por defecto? | Alejo | Hoy la primera pantalla no muestra ningún precio | casos/02 |
+| 12 | ¿Cuánto tarda ST en contestar un WhatsApp? (lo típico, dentro y fuera del horario) | ST | Esperar es el costo más caro de comprar por chat | casos/03 |
+| 13 | ¿Hacemos que todos los caminos a WhatsApp sumen un evento con su origen (tarjeta del celu, ficha, carrito, flotante)? Hoy el de la tarjeta del celu y el del carrito no suman | Alejo (sesión en ST) | Sin eso, «quiso comprar» cuenta de menos | casos/03 |
+| 14 | El «Consultá un decant» del juego Desafío manda a otro número de WhatsApp que el resto de la web. ¿Es a propósito? | ST / Alejo | Si no, esas consultas llegan a otro teléfono | casos/03 |
+| 15 | El mensaje de WhatsApp termina en «¿Tienen disponibilidad?» aunque la web ya muestra el stock. ¿El stock de la web es confiable? | ST | Si lo es, esa pregunta se puede sacar y ahorra una ida y vuelta | casos/03 |

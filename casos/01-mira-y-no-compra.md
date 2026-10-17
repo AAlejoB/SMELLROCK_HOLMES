@@ -19,7 +19,7 @@ Rol `leer-numero`, leyendo el código de ST (`origin/main`, `js/app.js`):
 | Lo que muestra | Qué cuenta en realidad | ¿Sirve para «mira y no compra»? |
 |---|---|---|
 | Laboratorio, «vistas» (`view_product`) | Sólo los toques en el ranking, en «similares», en «vistos hace poco» y al entrar con link directo a un perfume. **No** cuenta abrir una tarjeta común del catálogo. También suma 1 cuando alguien instala la app. | No: deja afuera el camino principal |
-| Laboratorio, clics a WhatsApp (`wa_click`) | El botón de WhatsApp de un perfume | Sí, es el «compra» de la web (la venta sigue por chat) |
+| Laboratorio, clics a WhatsApp (`wa_click`) | El botón de WhatsApp de un perfume, **pero no todos**: no suman el «Consultar →» de la tarjeta en el celular ni el pedido del carrito (corregido el 16-10-2026, ver `casos/03`, 1.b) | A medias: es el «compra» de la web, pero cuenta de menos |
 | Ojito con número en la tarjeta (`perfume_clicks`) | El primer toque o paso del mouse sobre cada tarjeta, por carga de página. En el celular, **un toque para hacer scroll también cuenta**. Acumulado desde siempre. | A medias: mide «pasó por encima», no «miró» |
 | Una persona que entra, mira y se va sin tocar nada | **Nada.** No hay evento de llegada | Es justo lo que queremos medir |
 
@@ -113,6 +113,5 @@ Preguntas abiertas: ver `preguntas/abiertas.md` (1, 2, 3 y 6 a 8).
 
 - [primera-impresion](../tecnicas/primera-impresion.md)
 - [sobrecarga-de-opciones](../tecnicas/sobrecarga-de-opciones.md)
-- Pendientes de ficha: **prueba social** (con su límite: el caso 1.c),
-  **fricción y esfuerzo** (Fogg, 2009: conducta = motivación × capacidad ×
-  disparador).
+- [friccion-y-esfuerzo](../tecnicas/friccion-y-esfuerzo.md) (Fogg, 2009)
+- Pendiente de ficha: **prueba social** (con su límite: el caso 1.c).

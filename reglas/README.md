@@ -12,3 +12,4 @@ Lo que ya sirve para cualquier tienda. Cada regla:
 | [mostrar-un-dato](mostrar-un-dato.md) | foro 01 | Elegida por Alejo (16-10-2026), sin probar en tienda |
 | Contá cuántos llegan · Las 4 preguntas de la primera pantalla | caso 01 | Borrador, dentro del caso |
 | 2 productos enteros con precio en la primera pantalla · cintas con cupo | caso 02 | Borrador, dentro del caso |
+| Cada pregunta sin contestar es una ida y vuelta en el chat · contá todas las puertas a WhatsApp | caso 03 | Borrador, dentro del caso |
