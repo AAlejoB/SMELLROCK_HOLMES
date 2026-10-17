@@ -1,7 +1,7 @@
 # Dónde estamos
 
 > Leé esto después de `CLAUDE.md`. Se actualiza al cerrar cada sesión.
-> Última: 16-10-2026 (segunda sesión: casos 03 a 05 y 4 fichas).
+> Última: 17-10-2026 (respuesta de la plataforma sobre sus eventos).
 
 ## Hecho
 - Forma del proyecto elegida por Alejo: fichas + casos + reglas + preguntas,
@@ -31,6 +31,20 @@
 - Reglas borrador renumeradas: 01-02 (caso 01), 03 (caso 02), 04-05 (caso 03),
   06 (caso 04), 07 (caso 05).
 - `numeros.js` arreglado (40 % ya no sale «1 de cada 3»); ST tiene la copia.
+- **La plataforma contestó cómo mide (17-10).** No construyeron nada (no hace
+  falta todavía). Lo que sirve para leer sus números:
+  - La **llegada se cuenta en el navegador**, una por carga de página, como en
+    ST. Las páginas de la tienda salen de caché: del lado del server se
+    contarían renovaciones de caché, no visitas.
+  - **Tres trampas de «qué cuenta»** (para `leer-numero`, paso 1):
+    `product_view` sale sólo de la ficha (abrir un perfume en la hoja rápida del
+    catálogo **no suma**, igual que en ST); `add_to_cart` cuenta **por renglón**
+    (un pack de 5 decants suma 5, el «+» del carrito no suma); `search` se
+    cuenta en el server cada vez que se arma la página de búsqueda.
+  - Unas 6 puertas a WhatsApp sin evento: la regla 05 del caso 03 vale para las
+    dos tiendas.
+  - Preguntas nuevas 23 a 28. Las de Lautaro (23 a 26) ya están en un issue de
+    la plataforma.
 
 ## Esperando
 - **Datos:** 2 a 4 semanas de `llegada` y `ficha_abierta` en la pestaña
@@ -40,7 +54,8 @@
   reordenan. Y contestar la pregunta 16. (9 a 11, contestadas el 17-10.)
 - **ST:** leer 20-30 chats (caso 03, sólo conteos) y contar ventas por medio de
   pago (caso 05). Preguntas 12, 14, 15, 17, 18 y 21.
-- **Abogado:** pregunta 20 (dos precios y «sin interés», ya abierta en la
+- **Lautaro:** preguntas 23 a 26 (eventos de la plataforma). Con Alejo, la 27.
+- **Abogado:** pregunta 28 (identificador por aparato sin aviso) y pregunta 20 (dos precios y «sin interés», ya abierta en la
   plataforma).
 - **Decidido por Alejo (17-10), cómo se guardan los datos:** ST guarda todo el
   detalle (400 días; pesa poco). En la plataforma, **compactar en escalones**

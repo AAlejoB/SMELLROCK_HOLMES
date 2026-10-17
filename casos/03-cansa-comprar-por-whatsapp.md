@@ -130,6 +130,13 @@ Con la ficha [friccion-y-esfuerzo](../tecnicas/friccion-y-esfuerzo.md):
 | Belleza | Tono, tipo de piel | Guía de tonos; el chat para el que duda |
 | Mayorista | Lista de precios, mínimo, precio por bulto | Lista pública y pedido armado; el chat para negociar volumen |
 
+**La plataforma SaaS tiene la misma trampa que ST** (respuesta del 17-10): la
+venta principal pasa por el checkout, pero hay unas 6 puertas a WhatsApp de
+cara a la clienta (ficha, pie de página, redes del menú, formulario de
+contacto, error del pago y el pedido pagado por transferencia) y **ninguna
+manda evento**. Dos tiendas distintas con el mismo hueco: la regla 05 no es
+sólo de ST. Cómo contarlas va como pregunta 25.
+
 ## 3. La regla que sale (borrador para `reglas/`)
 
 > **Regla 04: Cada pregunta que la página no contesta se convierte en una ida
