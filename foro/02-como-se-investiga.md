@@ -96,6 +96,17 @@ compran perfume (no hace falta que sean clientas de ST) y, en el local, una
 pregunta por clienta que anota Lautaro. En fechas pico no: hay mucha gente y
 compran para regalar, que no es lo de siempre.
 
+**Lo que agregó Alejo después:** en el local ya se anota cada venta (el
+«Reemplazo de hoja»: qué se llevó, quién y si pagó en efectivo, MP o Posnet) y
+el panel tiene el «Resumen del día», por semana. Y el POS nuevo lo va a anotar
+más prolijo. O sea: **las ventas no hay que anotarlas a mano**. A mano queda
+sólo el porqué (las preguntas a personas).
+
+**La versión de 3 renglones (propuesta, para dudas chicas):**
+1. **Pregunta:** qué queremos saber, dicho de forma que se pueda medir.
+2. **Miramos:** qué dato o qué personas, y qué cuenta ese número.
+3. **Salió:** el resultado con su rango, y qué hacemos con eso.
+
 **Lo que falta charlar:**
 - ¿Quién consigue las personas y cuántas por semana se pueden?
 - ¿Lautaro puede anotar en el local? ¿Con qué (papel, una planilla, el

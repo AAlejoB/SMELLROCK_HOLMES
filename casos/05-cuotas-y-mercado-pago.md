@@ -21,6 +21,13 @@
 pagan en cuotas, cuántas en un pago con tarjeta y cuántas por transferencia o
 efectivo. Sólo los conteos; los montos no entran al repo.
 
+**Lo que ya hay (16-10-2026):** el «Reemplazo de hoja» del panel anota cada
+venta del local con **efectivo, MP o Posnet**, y el «Resumen del día» muestra
+lo que salió, día por día de la semana (60 días de historia). Alcanza para
+contar ventas por medio de cobro **hoy mismo**, sin anotar nada nuevo. No dice
+**cuántas cuotas** ni **si la venta vino de la web**: eso lo tendría que anotar
+el POS nuevo (pregunta 22).
+
 ## 2. Lo general: por qué cuotas
 
 ### Lo que dicen contra lo que hacen
