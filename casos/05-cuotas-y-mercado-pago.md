@@ -168,7 +168,9 @@ Cuántos hacen falta: 5 personas
   cuenta que ya tenés.
 - [prueba-social](../tecnicas/prueba-social.md): la confianza que presta una
   marca conocida.
-- Pendiente de ficha: **dolor de pagar** (Prelec y Loewenstein, 1998).
+- [dolor-de-pagar](../tecnicas/dolor-de-pagar.md) (nueva, 17-10): el efecto
+  sin efectivo existe pero es chico y se achica con los años (meta-análisis
+  2024).
 
 Preguntas abiertas: 18 a 20 de `preguntas/abiertas.md`.
 

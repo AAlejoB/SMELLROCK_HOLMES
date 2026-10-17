@@ -16,8 +16,9 @@
 - Casos 01 a 05 en primera pasada: «mira y no compra», «gancho visual del
   catálogo», «cansa comprar por WhatsApp», «conocer un perfume por el nombre»
   y «cuotas y Mercado Pago».
-- Fichas (8): primera impresión, sobrecarga de opciones, aislamiento, posición
-  en la lista, fricción y esfuerzo, prueba social, fluidez, anclaje.
+- Fichas (9): primera impresión, sobrecarga de opciones, aislamiento, posición
+  en la lista, fricción y esfuerzo, prueba social, fluidez, anclaje, dolor de
+  pagar.
 - **Hallazgo del caso 03:** en ST, `wa_click` cuenta de menos. Arreglado el
   mismo día: `wa_intento` cuenta los 12 caminos a WhatsApp con su origen, en
   producción desde el 16-10 23:46. Corrección: el botón de la tarjeta del celu
@@ -56,4 +57,4 @@
 - Ninguno de la lista original. Los próximos salen de lo que Alejo pregunte.
 
 ## Fichas pendientes
-Dolor de pagar (Prelec y Loewenstein, 1998), que sale del caso 05.
+Ninguna. Las próximas salen de los casos nuevos.
