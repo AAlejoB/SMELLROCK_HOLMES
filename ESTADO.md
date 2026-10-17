@@ -26,7 +26,7 @@
   ficha (lo va a decir el origen).
 - **Preguntas 9 a 11 contestadas (17-10):** el orden por precio queda a medias
   a propósito (lo de diseñador arriba); «Nuevo» pasa a ser sólo los últimos 10
-  cargados (falta hacerlo en ST); el celu sigue arrancando en ☰ (el caso 02
+  cargados (en producción en ST desde el 17-10, v1.1.286); el celu sigue arrancando en ☰ (el caso 02
   había medido la otra vista: corregido), con un globito para enseñar ▦ / ☰.
 - Reglas borrador renumeradas: 01-02 (caso 01), 03 (caso 02), 04-05 (caso 03),
   06 (caso 04), 07 (caso 05).
