@@ -102,8 +102,9 @@ Ver `preguntas/abiertas.md` 9 a 11.
 - [aislamiento](../tecnicas/aislamiento.md)
 - [posicion-en-la-lista](../tecnicas/posicion-en-la-lista.md)
 - [primera-impresion](../tecnicas/primera-impresion.md)
-- Pendiente de ficha: **fluidez** (Reber, Schwarz y Winkielman, 2004),
-  **anclaje** (Tversky y Kahneman, 1974).
+- [fluidez](../tecnicas/fluidez.md) (Reber, Schwarz y Winkielman, 2004)
+- [anclaje](../tecnicas/anclaje.md) (Tversky y Kahneman, 1974): el orden
+  «precio: mayor a menor» es un ancla (pregunta 9).
 
 ## Fuentes
 - Mediciones propias en stperfumeria.com, grid.com.ar/calzado/zapatillas y
