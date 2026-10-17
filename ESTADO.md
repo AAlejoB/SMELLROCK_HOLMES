@@ -26,7 +26,7 @@
 - **Datos:** 2 a 4 semanas de `llegada` y `ficha_abierta` en la pestaña
   Holmes. Con eso, los casos 01 y 02 pasan de hipótesis a números.
 - **Alejo:** elegir el método del [foro 02](foro/02-como-se-investiga.md)
-  (A, B o C). Los casos 03 a 05 se ordenaron con A; si elige otro, se
+  (A, B o C): en charla, se inclina por B (ver la charla en el foro). Los casos 03 a 05 se ordenaron con A; si elige otro, se
   reordenan. Y contestar las preguntas 9 a 11, 13 y 16.
 - **ST:** leer 20-30 chats (caso 03, sólo conteos) y contar ventas por medio de
   pago (caso 05). Preguntas 12, 14, 15, 17, 18 y 21.

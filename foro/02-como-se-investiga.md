@@ -70,6 +70,38 @@ Elegir la métrica, medirla bien unas semanas y recién ahí preguntarse por qu�
 Se investiga en el orden de A, y cada caso se escribe con los cinco pasos de B
 (Problema, Plan, Datos, Análisis, Conclusión), así queda reutilizable.
 
+## La charla (16-10-2026, sigue abierta)
+
+Página para charlarlo, con el caso 03 recorrido por los tres métodos y una
+calculadora de visitas: artifact privado «Cómo investiga Holmes» (lo tiene
+Alejo).
+
+**Lo que dijo Alejo:**
+- Se inclina por **B**. Empezar por A y después meter B tampoco le parece mal.
+- **Alejo no trabaja en la perfumería.** Las personas del local las tendría
+  que ir anotando Lautaro.
+- **Conseguir 5 personas en un mismo día que compren perfume es difícil.**
+  Un día así sería algo como el Día de la Madre, y ahí va demasiada gente.
+
+**Lo que salió de la página:**
+- C no es malo: arranca hoy cuando el dato ya existe y está bien contado
+  (casos 04 y 05). En los casos 01 a 03 hay que esperar o arreglar el conteo.
+- El paso de B «¿qué cuenta este número?» encontró el error de `wa_click`
+  (caso 03) y que «vistas» no son visitas (caso 01).
+
+**Propuesta en la mesa (no elegida):** B como plantilla de cada caso. En
+«Datos», primero lo que ya existe; las 5 personas **no tienen que ser el mismo
+día**: se juntan de a una en 1 o 2 semanas. Pueden ser conocidos de Alejo que
+compran perfume (no hace falta que sean clientas de ST) y, en el local, una
+pregunta por clienta que anota Lautaro. En fechas pico no: hay mucha gente y
+compran para regalar, que no es lo de siempre.
+
+**Lo que falta charlar:**
+- ¿Quién consigue las personas y cuántas por semana se pueden?
+- ¿Lautaro puede anotar en el local? ¿Con qué (papel, una planilla, el
+  panel)?
+- ¿B completo para todo, o una versión de 3 renglones para dudas chicas?
+
 ## Lo que se decide acá
 - [ ] Alejo elige A, B o C.
 - [ ] Lo elegido pasa a `CLAUDE.md` § El método y a la plantilla de casos.
