@@ -42,6 +42,7 @@ para ST, lo dice.
 
 ```
 CLAUDE.md          ← esto: reglas y método
+ESTADO.md          ← dónde quedamos: leerlo al arrancar, actualizarlo al cerrar
 tecnicas/          ← una ficha por técnica (plantilla: tecnicas/_plantilla.md)
 casos/             ← una pregunta real, de lo puntual a lo general
 reglas/            ← lo que ya sirve para cualquier tienda
