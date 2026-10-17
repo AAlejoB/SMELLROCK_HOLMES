@@ -50,11 +50,14 @@
     if (total === 0) return { uno: null, deCada: null, texto: 'Todavía no hay datos' };
     if (exitos === 0) return { uno: 0, deCada: total, texto: 'Nadie todavía (de ' + total + ')' };
     var p = exitos / total;
-    if (p <= 0.5) {
+    // «1 de cada k» sólo hasta 1 de cada 4: más arriba redondea grueso (40 % daba «1 de cada 3», que es 33 %).
+    if (p <= 0.25) {
       var k = Math.round(1 / p);
       return { uno: 1, deCada: k, texto: '1 de cada ' + k };
     }
     var x = Math.round(p * 10);
+    // 96 de 100 no es «10 de cada 10»: eso queda para cuando fueron todos.
+    if (x === 10 && exitos < total) return { uno: 9, deCada: 10, texto: 'Más de 9 de cada 10' };
     return { uno: x, deCada: 10, texto: x + ' de cada 10' };
   }
 

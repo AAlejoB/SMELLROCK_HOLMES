@@ -27,6 +27,11 @@ test('C · de cada tantos', () => {
   assert.equal(H.deCadaTantos(3, 60).texto, '1 de cada 20');
   assert.equal(H.deCadaTantos(9, 90).texto, '1 de cada 10');
   assert.equal(H.deCadaTantos(7, 10).texto, '7 de cada 10');
+  assert.equal(H.deCadaTantos(1, 4).texto, '1 de cada 4');
+  assert.equal(H.deCadaTantos(12, 30).texto, '4 de cada 10');   // antes «1 de cada 3» (33 % para un 40 %)
+  assert.equal(H.deCadaTantos(9, 20).texto, '5 de cada 10');    // antes «1 de cada 2»
+  assert.equal(H.deCadaTantos(96, 100).texto, 'Más de 9 de cada 10');
+  assert.equal(H.deCadaTantos(10, 10).texto, '10 de cada 10');
   assert.equal(H.deCadaTantos(0, 40).texto, 'Nadie todavía (de 40)');
   assert.equal(H.deCadaTantos(0, 0).texto, 'Todavía no hay datos');
 });
