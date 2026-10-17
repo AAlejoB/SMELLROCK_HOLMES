@@ -26,6 +26,23 @@ ve esa persona en la primera pantalla y en los primeros scrolls?
 
 ## 3. Datos (16-10-2026, celular 375 × 812)
 
+> **Corrección (17-10-2026).** La columna de ST de abajo se midió en la vista
+> **▦** (una columna de tarjetas grandes). Pero en el celular ST **arranca en
+> ☰ lista** desde el 4-10-2026 (se recuerda por visitante; quien nunca tocó el
+> botón ve ☰). Medido de nuevo, sin vista guardada, en la vista ☰:
+>
+> | ST, vista ☰ (la de arranque) | |
+> |---|---|
+> | Dónde empieza el primer producto | 447 px |
+> | Primer precio | **520 px: adentro de la primera pantalla**, con el precio en efectivo al lado |
+> | Productos en la primera pantalla | **4** (3 enteros) |
+> | Alto de cada fila | 117 px |
+> | Orden | Precio: mayor a menor |
+> | Cintas | 15 de los primeros 20 tienen «Nuevo» o «Último»; **los primeros 5, todos «Último»** |
+>
+> La tabla de abajo queda como estaba, pero la columna ST describe la vista ▦,
+> que se elige a mano.
+
 | | ST | Grid (zapatillas) | Juleriaque (fragancias) |
 |---|---|---|---|
 | Columnas | **1** (tarjeta grande; hay botón «ver en lista») | 2 | 2 |
@@ -54,8 +71,10 @@ cuál? 4 preguntas»), el horario en vivo y las notas del perfume en la tarjeta.
    mostró que la posición decide a qué se le hace clic. Arriba conviene lo que
    más gente quiere ver. Lo caro primero puede servir de ancla (Kahneman), pero
    eso es una hipótesis: hay que probarla, no suponerla.
-3. **Fluidez (lo fácil de recorrer gusta más).** Con una columna y tarjetas
-   de 700 px, comparar dos perfumes pide scroll. Grid y Juleriaque muestran 2
+3. **Fluidez (lo fácil de recorrer gusta más).** ~~Con una columna y tarjetas
+   de 700 px, comparar dos perfumes pide scroll.~~ *Corregido el 17-10: en la
+   vista de arranque (☰) se ven 4 perfumes con precio; esta palanca ST ya la
+   juega bien. Lo de 700 px vale sólo para la vista ▦.* Grid y Juleriaque muestran 2
    por fila, con el precio en el mismo lugar en todas. Reber, Schwarz y
    Winkielman (2004): lo que se procesa fácil se percibe como más lindo y más
    confiable.
@@ -67,16 +86,38 @@ vidriera vacía.
 
 ## 5. Conclusión
 
+### Lo que contestó Alejo (17-10-2026)
+- **Orden (pregunta 9):** un poco «quedó así» y un poco a propósito, para que
+  lo de diseñador se vea primero. O sea: es un ancla a medias. Se puede
+  probar otro orden, pero cuidando que lo de diseñador siga a la vista.
+- **«Nuevo» (pregunta 10):** hoy, todo perfume cargado desde el panel queda
+  «Nuevo» **para siempre** (y además los últimos 10 de la lista base): por
+  eso 96 de 200. Alejo eligió **«Nuevo» sólo para los últimos 10 cargados.**
+  Es un cupo fijo: la cinta vuelve a destacar (ficha
+  [aislamiento](../tecnicas/aislamiento.md)). Cambio pendiente en el repo
+  de ST.
+- **Vista del celu (pregunta 11):** **☰ queda de arranque.** Y una idea de
+  Alejo: todo lo que sea **a elección del usuario** (como el botón ▦ / ☰) se
+  enseña con **globitos** que se borran al primer toque, «como ángel de la
+  guarda». ST ya tiene globitos en la tienda (decants, ♡, comparar); falta
+  uno para la vista. En la ficha
+  [friccion-y-esfuerzo](../tecnicas/friccion-y-esfuerzo.md) es un
+  **disparador** de Fogg: aparece justo cuando hace falta y no estorba
+  después. Límite: uno por vez, para que no se vuelva ruido.
+
 ### Para ST (puntual)
 Hipótesis para probar, en este orden (de más barata a más cara):
 1. **Sacar las tarjetas sin foto de los primeros lugares** (al final, o
    escondidas hasta tener foto).
 2. **Orden por defecto «más buscados»** (sale de `ficha_abierta`, cuando la
-   pestaña Holmes junte datos) en vez de «precio: mayor a menor».
-3. **Cintas con cupo**: «Nuevo» sólo los últimos 15-30 días, y el total de
-   cintas por debajo de 1 de cada 5 tarjetas.
-4. **Vista de 2 columnas por defecto en el celular**, con precio arriba del
-   pliegue. ST ya tiene la otra vista: es cambiar cuál arranca.
+   pestaña Holmes junte datos) en vez de «precio: mayor a menor». Ojo con lo
+   que dijo Alejo: lo de diseñador tiene que seguir a la vista arriba.
+3. **Cintas con cupo**: «Nuevo» sólo los **últimos 10 cargados** (elegido por
+   Alejo), y el total de cintas por debajo de 1 de cada 5 tarjetas. Hoy los
+   primeros 5 de ☰ dicen todos «Último».
+4. ~~Vista de 2 columnas por defecto en el celular~~: **descartada**. La de
+   arranque (☰) ya muestra precio arriba del pliegue. Alejo eligió que quede.
+   En su lugar: un globito que enseñe el botón ▦ / ☰.
 
 Cómo se mide: con la pestaña Holmes, «ficha abierta por visita» antes y
 después de cada cambio, con la regla

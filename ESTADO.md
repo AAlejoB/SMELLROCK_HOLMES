@@ -23,6 +23,12 @@
   producción desde el 16-10 23:46. Corrección: el botón de la tarjeta del celu
   está escondido en la vista ☰, así que el camino más usado es seguramente la
   ficha (lo va a decir el origen).
+- **Preguntas 9 a 11 contestadas (17-10):** el orden por precio queda a medias
+  a propósito (lo de diseñador arriba); «Nuevo» pasa a ser sólo los últimos 10
+  cargados (falta hacerlo en ST); el celu sigue arrancando en ☰ (el caso 02
+  había medido la otra vista: corregido), con un globito para enseñar ▦ / ☰.
+- Reglas borrador renumeradas: 01-02 (caso 01), 03 (caso 02), 04-05 (caso 03),
+  06 (caso 04), 07 (caso 05).
 - `numeros.js` arreglado (40 % ya no sale «1 de cada 3»); ST tiene la copia.
 
 ## Esperando
@@ -30,7 +36,7 @@
   Holmes. Con eso, los casos 01 y 02 pasan de hipótesis a números.
 - **Alejo:** elegir el método del [foro 02](foro/02-como-se-investiga.md)
   (A, B o C): en charla, se inclina por B (ver la charla en el foro). Los casos 03 a 05 se ordenaron con A; si elige otro, se
-  reordenan. Y contestar las preguntas 9 a 11 y 16.
+  reordenan. Y contestar la pregunta 16. (9 a 11, contestadas el 17-10.)
 - **ST:** leer 20-30 chats (caso 03, sólo conteos) y contar ventas por medio de
   pago (caso 05). Preguntas 12, 14, 15, 17, 18 y 21.
 - **Abogado:** pregunta 20 (dos precios y «sin interés», ya abierta en la

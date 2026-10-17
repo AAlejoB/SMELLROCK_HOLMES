@@ -102,6 +102,13 @@ el panel tiene el «Resumen del día», por semana. Y el POS nuevo lo va a anota
 más prolijo. O sea: **las ventas no hay que anotarlas a mano**. A mano queda
 sólo el porqué (las preguntas a personas).
 
+Sobre la Hoja (17-10): es una **transición**. Anota exactamente lo mismo que
+la hoja de papel, con los mismos campos, para que en el local no tengan que
+aprender otra cosa además de digitalizar. Le cuesta acostumbrarse, y la
+plataforma lo resuelve de raíz. Para Holmes: **no se le agregan campos a la
+Hoja**; lo que falta (de dónde vino la venta, cuántas cuotas) va al POS nuevo
+(pregunta 22).
+
 **La versión de 3 renglones (propuesta, para dudas chicas):**
 1. **Pregunta:** qué queremos saber, dicho de forma que se pueda medir.
 2. **Miramos:** qué dato o qué personas, y qué cuenta ese número.

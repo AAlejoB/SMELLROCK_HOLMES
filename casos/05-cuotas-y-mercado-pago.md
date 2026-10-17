@@ -116,7 +116,7 @@ barato, [VENDOR] vía `negocio-ar`) viaja a cualquier rubro.
 
 ## La regla que sale (borrador para `reglas/`)
 
-> **Regla 06: Mostrá la cuota real y el total, juntos.** «3 cuotas de $X
+> **Regla 07: Mostrá la cuota real y el total, juntos.** «3 cuotas de $X
 > (total $Y)», sólo si la tienda las ofrece de verdad y con el total a la
 > vista. La transferencia, al lado y con su rótulo. No se muestran planes que
 > terminaron (Ahora 12, Cuota Simple).

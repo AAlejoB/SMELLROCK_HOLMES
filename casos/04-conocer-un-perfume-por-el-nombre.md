@@ -83,7 +83,7 @@ un diferencial ([observado], vía `negocio-ar`, 6-10-2026).
 
 ## 3. La regla que sale (borrador para `reglas/`)
 
-> **Regla 05: Lo que no se puede probar online se traduce y se achica.**
+> **Regla 06: Lo que no se puede probar online se traduce y se achica.**
 > Traducirlo: 2 o 3 cosas conocidas, foto real y 3 datos simples (cuánto dura,
 > cuánto se siente, para cuándo). Achicarlo: una versión chica o una
 > devolución fácil, a un toque desde la ficha.

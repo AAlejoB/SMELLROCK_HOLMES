@@ -132,12 +132,12 @@ Con la ficha [friccion-y-esfuerzo](../tecnicas/friccion-y-esfuerzo.md):
 
 ## 3. La regla que sale (borrador para `reglas/`)
 
-> **Regla 03: Cada pregunta que la página no contesta se convierte en una ida
+> **Regla 04: Cada pregunta que la página no contesta se convierte en una ida
 > y vuelta en el chat.** Leé 20 chats reales, anotá qué se preguntó antes de
 > comprar y subí a la web las 3 preguntas que más se repiten. El chat queda
 > para quien quiere asesoramiento, no para confirmar lo que la página ya sabe.
 >
-> **Regla 04: Antes de medir el chat, contá todas las puertas que llevan a él.**
+> **Regla 05: Antes de medir el chat, contá todas las puertas que llevan a él.**
 > Si un camino a WhatsApp no suma al conteo, la tasa sale más baja de lo real.
 
 Pasan a `reglas/` cuando se lean los chats de ST (§ 4, paso 1).
