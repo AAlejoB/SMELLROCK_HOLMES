@@ -54,19 +54,33 @@ Rol `leer-numero`, leyendo `js/app.js` y `css/styles.css` de ST
 |---|---|
 | «Consultar →» de la ficha abierta (hoja de abajo) | ✅ |
 | «Consultar →» al pasar el mouse por la tarjeta (computadora) | ✅ |
-| **«Consultar →» de la tarjeta en el celular** (link directo; el CSS lo muestra sólo debajo de 768 px) | ❌ |
+| **«Consultar →» de la tarjeta en el celular** (link directo; el CSS lo muestra sólo debajo de 768 px **y sólo en la vista ▦**: en la vista ☰, que es la de arranque, está escondido) | ❌ |
 | **Enviar el pedido del carrito** (`sendCartToWA`) | ❌ |
 | Botón flotante, sets, banner de decants, armador de decants, aviso de stock | ❌ |
 
 **Conclusión:** el «quiso comprar» que el caso 01 tomaba de `wa_click` **cuenta
-de menos**. Justo el camino más común (el botón de la tarjeta en el celular) y
-el pedido armado con el carrito no suman. Cualquier tasa llegó → WhatsApp que se
-arme hoy da **más baja** de lo real.
+de menos**: el botón de la tarjeta en el celular, el pedido armado con el
+carrito y los demás caminos no suman. Cualquier tasa llegó → WhatsApp que se
+arme con `wa_click` da **más baja** de lo real. Cuánto más baja, no se sabe.
 
-Para arreglarlo (en el repo de ST, no acá): que todos los caminos a WhatsApp
-sumen un evento, con un dato de **desde dónde** (tarjeta, ficha, carrito,
-flotante). Mejor con un nombre nuevo, como se hizo con `llegada`, para no
-cambiar lo que ya cuenta el Laboratorio (regla de `[HOLMES]`). Pregunta 13.
+> **Corrección (16-10-2026, sesión de ST):** en la primera versión de este caso
+> dijimos que el botón de la tarjeta en el celular era «el camino más común».
+> **Probablemente no lo es**: en la vista ☰ (la de arranque en el celular) ese
+> botón está escondido por CSS (`css/styles.css`, regla
+> `html[data-vista="lista"] … .card-cta-mobile`). En ☰ se llega a WhatsApp
+> tocando la fila → la ficha → «Consultar», que **sí** sumaba. Lo va a decir el
+> dato de origen de `wa_intento`.
+
+**Arreglado en ST el 16-10-2026** (pregunta 13): evento nuevo `wa_intento` en
+los 12 caminos que abren WhatsApp, cada uno con su **origen** (ficha, tarjeta,
+carrito, flotante, etc.), con nombre nuevo para no cambiar lo que ya cuenta el
+Laboratorio con `wa_click`. Está en producción y la pestaña Holmes lo cuenta
+desde el 16-10 a las 23:46, con los orígenes por separado.
+
+Ojo al leerlo: una misma visita puede dejar **varias `llegada` seguidas**
+(hubo 3 en 3 segundos desde un iPhone). La visita se cuenta por sesión y día,
+así que la cuenta de Holmes no cambia; lo que no hay que hacer es contar
+llegadas sueltas.
 
 ### 1.c Lo que pasa adentro del chat → **hoy no se sabe**
 
@@ -137,7 +151,7 @@ primero el porqué, después el cuánto. Si Alejo elige otro, se reordena.
 |---|---|---|---|
 | 1. Leer 20 a 30 chats que empezaron en la web | `qa-preguntas` | Que ST anote, **sin nombres ni teléfonos**: hora del primer mensaje, hora de la primera respuesta, qué preguntó, cuántas idas y vueltas hubo y si compró. Al repo entran sólo los conteos | ST |
 | 2. Prueba con 5 personas: «comprá este perfume hasta que te lo confirmen» | `qa-preguntas` | 5 personas, una tarde | Alejo |
-| 3. Que todos los caminos a WhatsApp sumen un evento con su origen | `leer-numero` | Una sesión en ST, o directo en la plataforma | Alejo |
+| 3. ~~Que todos los caminos a WhatsApp sumen un evento con su origen~~ **Hecho el 16-10** (`wa_intento`) | `leer-numero` | — | — |
 | 4. Con los pasos 1 y 3: de cada 10 que escriben, cuántas compran, con su rango | `leer-numero` | Los conteos del paso 1 | — |
 | 5. A/B «carrito con pago en la web» contra «WhatsApp» | `leer-numero` | Un checkout real (la plataforma lo tiene) y ~3.800 visitas por versión para ver de 2 % a 3 % | Más adelante |
 
