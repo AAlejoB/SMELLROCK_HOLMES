@@ -41,6 +41,14 @@
   pago (caso 05). Preguntas 12, 14, 15, 17, 18 y 21.
 - **Abogado:** pregunta 20 (dos precios y «sin interés», ya abierta en la
   plataforma).
+- **Decidido por Alejo (17-10), cómo se guardan los datos:** ST guarda todo el
+  detalle (400 días; pesa poco). En la plataforma, **compactar en escalones**
+  desde el día uno: los últimos meses evento por evento, después un resumen por
+  día y por producto (visitas, fichas, intentos por origen, ventas), y más
+  atrás semanas o meses («que sea exponencial»). Para `leer-numero`: el resumen
+  diario no pierde nada de lo que Holmes cuenta (la visita es aparato + día);
+  sólo se pierde el camino dentro de la visita, y eso queda para los meses con
+  detalle.
 - **Decidido por Alejo, no tocar:** el «N mirando ahora» de la web vieja de ST
   queda hasta que la tienda pase a la plataforma.
 
